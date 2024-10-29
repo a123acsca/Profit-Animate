@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: helvetica;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+
+.ancho {
+  max-width: 1200px;
+  /* border: 2px red solid; */
+  margin: auto;
+}
+
+.cabecera {
+  /* border: 1px red solid; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+.cabecera figure {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-bar {
+  display: none;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+  z-index: 20;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  /* border: 1px red solid; */
+  padding: 2px;
+  border-bottom: 1px white solid;
+}
+.nav-bar a:hover {
+  border-bottom: 1px red solid;
+}
+
+/* ------------------- CSS SLIDE DE FOTOS ------------------- */
+.slide-foto{
+    position: relative;
+}
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  min-height: 400px;
+}
+
+.rslides li {
+  backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  min-height: 400px;
+  object-fit: cover;
+  border: 0;
+}
+.art-position {
+  max-width: 310px;
+  text-align: right;
+  position: absolute;
+  top: 30%;
+  right: 100px;
+  z-index: 10;
+}
+.art-position h1 {
+  font-size: 45px;
+  line-height: 45px;
+  margin-bottom: 20px;
+  color: #ff4048;
+}
+.art-position p {
+  margin-bottom: 20px;
+}
+.art-position a {
+  border: 1px #ff4048 solid;
+  padding: 15px 30px;
+  text-decoration: none;
+  background-color: #ff4048;
+  color: white;
+  border-radius: 10px;
+  display: inline-block;
+}
+.art-position a:hover {
+  background-color: white;
+  border: 1px #ff4048 solid;
+  color: #ff4048;
+}
+.ocultar{
+    z-index: 20;
+}
+/* --------------------------- FIN CSS SLIDE ------------------ */
+
+.sec-servmain {
+  margin-top: 50px;
+}
+.sec-servmain h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.sec-servmain hr {
+  max-width: 50px;
+  margin: auto;
+  margin-bottom: 50px;
+  background-color: black;
+  height: 2px;
+  border: 0;
+}
+.sec-serv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.art-profit {
+  animation-name: fadeInUp;
+  /* border: 1px red solid; */
+  text-align: center;
+  max-width: 285px;
+  padding: 15px 30px;
+}
+.art-profit i {
+  font-size: 45px;
+  border: 3px #e0e0e0 solid;
+  padding: 15px 15px;
+  border-radius: 10px;
+  color: #ff4048;
+}
+
+.art-profit i,
+h3 {
+  margin-bottom: 20px;
+}
+
+.sec-galery {
+  display: flex;
+  padding: 50px 0px;
+  align-items: center;
+  gap: 100px;
+  /* border: 1px red solid; */
+  background-color: #f7f7f7;
+  margin-top: 50px;
+}
+
+.art-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 900px;
+}
+.art-gallery img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+.art-text {
+  max-width: 500px;
+}
+
+.art-text h2 {
+  font-size: 55px;
+  line-height: 55px;
+  margin-bottom: 20px;
+}
+.art-text span {
+  font-weight: normal;
+}
+
+.art-text p {
+  margin-bottom: 20px;
+}
+.art-text a {
+  border: 1px #ff4048 solid;
+  padding: 15px 30px;
+  text-decoration: none;
+  background-color: #ff4048;
+  color: white;
+  border-radius: 10px;
+  display: inline-block;
+}
+.art-text a:hover {
+  background-color: white;
+  border: 1px #ff4048 solid;
+  color: #ff4048;
+}
+
+.piedepagina {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.piedepagina p {
+  font-size: 25px;
+}
+
+.redes {
+  display: flex;
+  gap: 30px;
+}
+.redes a {
+  display: flex;
+  text-decoration: none;
+  color: #ff4048;
+  border: 1px #e0e0e0 solid;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 25px;
+  border-radius: 50px;
+}
